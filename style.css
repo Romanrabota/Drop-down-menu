@@ -3,7 +3,7 @@ body {
 }
 
 :root {
-    --bg-color: rgba(255, 72, 0, 0.927);
+  --main-bg-color: rgba(255, 72, 0, 0.927);
 }
 
 
@@ -19,17 +19,15 @@ font-size:0;
     list-style-type:none;
     display: inline-block;
     position: relative;
-    background-color: rgb(250,97,41);
+    background-color: var(--main-bg-color);
     padding: 20px;
 }
 
 .link {
 
-    /*  background-color: rgb(250,97,41);*/
       color: white;
       text-decoration: none;
       font-size: 20px;
-     /* padding:1em;*/
       width:100%;
       text-align: center;
 
@@ -37,18 +35,17 @@ font-size:0;
 
 .sub-nav-list{
    position: absolute;
-  /* top:40px;*/
-  /* left:-20px;*/
+   top:43px;
+   left:-20px;
    display:block;
-   top:61px;
-   right:8px;
+
 
 }
 
 .sub-list-item{
     display:none;
     list-style-type:none;
-    background-color:rgb(250,97,41);
+    background-color:var(--main-bg-color);
     padding:20px;
     position: relative;
 }
@@ -69,7 +66,7 @@ font-size:0;
     display: none;
     list-style-type: none;
   
-    background-color: var(--bg-color);
+    background-color: var(--main-bg-color);
     padding: 20px;
     position: relative;
   }
@@ -90,7 +87,7 @@ font-size:0;
     display: none;
     list-style-type: none;
     padding: 20px;
-    background-color: var(--bg-color);
+    background-color: var(--main-bg-color);
   }
   .middle-sub-list-item:hover .last-sub-list-item {
     display: block;
